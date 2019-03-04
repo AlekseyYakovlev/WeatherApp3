@@ -6,12 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.weather_screan_fragment.*
 
 
-class WeatherScrean : Fragment() {
+class WeatherScreen : Fragment() {
 
     companion object {
-        fun newInstance() = WeatherScrean()
+        fun newInstance() = WeatherScreen()
     }
 
     private lateinit var viewModel: WeatherScreanViewModel
@@ -20,13 +21,14 @@ class WeatherScrean : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         return inflater.inflate(R.layout.weather_screan_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(WeatherScreanViewModel::class.java)
-        // TODO: Use the ViewModel
+        viewPager2.adapter = ViewPagerAdapter()
     }
 
 }
