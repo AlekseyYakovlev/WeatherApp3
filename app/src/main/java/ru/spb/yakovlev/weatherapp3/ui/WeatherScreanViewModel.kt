@@ -1,4 +1,4 @@
-package ru.spb.yakovlev.weatherapp3
+package ru.spb.yakovlev.weatherapp3.ui
 
 import androidx.lifecycle.ViewModel;
 

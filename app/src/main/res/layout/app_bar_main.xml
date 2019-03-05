@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".ui.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
             android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
     <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="ru.spb.yakovlev.weatherapp3.WeatherScreen"
+            android:name="ru.spb.yakovlev.weatherapp3.ui.WeatherScreen"
             android:id="@+id/fragment"/>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"

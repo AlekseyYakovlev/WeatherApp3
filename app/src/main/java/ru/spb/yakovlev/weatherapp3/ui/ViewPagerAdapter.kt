@@ -1,10 +1,11 @@
-package ru.spb.yakovlev.weatherapp3
+package ru.spb.yakovlev.weatherapp3.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.weather_card.view.*
+import ru.spb.yakovlev.weatherapp3.R
 
 class ViewPagerAdapter : RecyclerView.Adapter<PagerVH>() {
 
@@ -16,7 +17,13 @@ class ViewPagerAdapter : RecyclerView.Adapter<PagerVH>() {
     )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerVH =
-        PagerVH(LayoutInflater.from(parent.context).inflate(R.layout.weather_card, parent, false))
+        PagerVH(
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.weather_card,
+                parent,
+                false
+            )
+        )
 
     override fun getItemCount(): Int = colors.size
 

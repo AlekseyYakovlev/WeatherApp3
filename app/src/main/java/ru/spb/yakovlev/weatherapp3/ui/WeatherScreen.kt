@@ -1,4 +1,4 @@
-package ru.spb.yakovlev.weatherapp3
+package ru.spb.yakovlev.weatherapp3.ui
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.weather_screan_fragment.*
+import ru.spb.yakovlev.weatherapp3.R
 
 
 class WeatherScreen : Fragment() {
