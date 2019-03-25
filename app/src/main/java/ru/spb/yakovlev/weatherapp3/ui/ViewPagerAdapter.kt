@@ -28,7 +28,7 @@ class ViewPagerAdapter : RecyclerView.Adapter<PagerVH>() {
     override fun getItemCount(): Int = colors.size
 
     override fun onBindViewHolder(holder: PagerVH, position: Int) = holder.itemView.run {
-        tvTitle.text = "item $position"
+        tvCity.text = "item $position"
         container.setBackgroundResource(colors[position])
     }
 }
